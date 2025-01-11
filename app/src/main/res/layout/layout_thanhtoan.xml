@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tenmonan"
+            android:layout_weight="1"
+            android:textSize="@dimen/size18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/soluong"
+            android:layout_weight="1"
+            android:textSize="@dimen/size18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/giatien"
+            android:layout_weight="1"
+            android:textSize="@dimen/size18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gvThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="1"/>
+
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tongcong"
+        android:layout_marginEnd="@dimen/size10dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_gravity="end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnThanhToan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thanhtoan"
+            android:background="@color/colorPrimary"
+            android:layout_margin="@dimen/size10dp"
+            tools:ignore="ButtonStyle"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/btnThoatThanhToan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thoat"
+            android:background="@color/colorRed"
+            android:layout_margin="@dimen/size10dp"
+            tools:ignore="ButtonStyle"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+</LinearLayout>
